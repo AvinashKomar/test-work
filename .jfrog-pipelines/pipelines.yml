@@ -1,0 +1,7 @@
+---
+pipelines:
+- name: "pipe1"
+  steps:
+  - name: "s1"
+    type: ""
+    execution: {}
