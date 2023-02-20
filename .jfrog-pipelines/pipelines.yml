@@ -1,0 +1,14 @@
+---
+pipelines:
+- name: "pipe1"
+  steps:
+  - name: "s1"
+    type: "Bash"
+    execution:
+      onExecute:
+      - "echo \"Hello\""
+  - name: "s2"
+    type: "Bash"
+    execution:
+      onExecute:
+      - "echo \"sldkvj\""
