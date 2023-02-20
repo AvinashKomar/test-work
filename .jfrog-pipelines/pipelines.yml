@@ -6,11 +6,17 @@ pipelines:
   steps:
   - name: "s1"
     type: "Bash"
+    configuration:
+        inputResources: 
+          - name: test
     execution:
       onExecute:
       - "echo \"Hello\""
   - name: "s2"
     type: "Bash"
+    configuration:
+      inputSteps:
+        - name: s1
     execution:
       onExecute:
       - "echo \"sldkvj\""
