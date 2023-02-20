@@ -1,0 +1,13 @@
+---
+resourceFilePath: "resource.yml"
+pipelines:
+- name: "piprline"
+  steps:
+  - name: "s1"
+    type: "Bash"
+    configuration:
+      inputResources:
+      - name: "test"
+    execution:
+      onExecute:
+      - "echo \"Hello\""
