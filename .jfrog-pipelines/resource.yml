@@ -1,0 +1,13 @@
+resources:
+  - name: test
+    type: GitRepo
+    configuration:
+      # SCM integration where the repository is located
+      gitProvider: github # this will be replaced from values.yml
+      # Repository path, including org name/repo name
+      path: AvinashKomar/test-work # this will be replaced from values.yml
+      branches:
+        # Specifies which branches will trigger dependent steps
+        include: main
+      cancelPendingRunsOn:
+        newCommit: true
