@@ -1,4 +1,6 @@
 ---
+resourceFilePath: resource.yml
+
 pipelines:
 - name: "pipe1"
   steps:
